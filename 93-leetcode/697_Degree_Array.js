@@ -18,8 +18,21 @@ var findShortestSubArray = function (nums) {
       degree = hash_map[nums[i]];
     }
   }
-    
-    //find current running degree
+  
+    let hash_map2 = {};
+    let degree2 = 0;
+  //find current running degree
+  for (let i = 0; i < nums.length; i++) {
+    if (hash_map2[nums[i]]) {
+      hash_map2[nums[i]]++;
+    } else {
+      hash_map2[nums[i]] = 1;
+    }
+    //check if this is greater than degree
+    if (hash_map2[nums[i]] === degree) {
+      //then we reached
+    }
+  }  
     
 
   //first return degree and see if that checks out
