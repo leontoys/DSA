@@ -35,9 +35,13 @@
   - Time Complexity - we have to copy n times to new allocation - O(n)T
 
 - delete
-  - To remove an element , no additional space
+  - To remove an element at the end, no additional space
   - Space - O(1)
   - Time - O(1)
+
+  - If we have to delete elements in the middle, then we have to shift everything to fill the gap
+  - So Time - O(n)
+  - space - O(1)
 
 ## Dynamic Array
 
