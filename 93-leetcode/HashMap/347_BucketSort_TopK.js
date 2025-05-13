@@ -9,9 +9,11 @@ var topKFrequent = function (nums, k) {
   for (const num of nums) {
     hashMap[num] = (hashMap[num] || 0) + 1;
   }
+  console.log(hashMap);
   for (const [key, value] of Object.entries(hashMap)) {
     count[value].push(parseInt(key));
   }
+  console.log(count);
   let result = [];
   for (let i = nums.length - 1; i >= 0; i--) {
     for (const key of count[i]) {
